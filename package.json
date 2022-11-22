@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/RafaZeero/graphql-angular-nestjs/issues"
   },
-  "homepage": "https://github.com/RafaZeero/graphql-angular-nestjs#readme"
+  "homepage": "https://github.com/RafaZeero/graphql-angular-nestjs#readme",
+  "dependencies": {
+    "graphql-language-service-server": "^2.9.3"
+  }
 }

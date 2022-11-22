@@ -23,8 +23,10 @@ export class UsersService {
   private async _validateCreateUserData(createUserData: CreateUserInput) {
     try {
       await this.usersRepository.findOne({ email: createUserData.email });
-      throw new UnprocessableEntityException('Email already exists.');
-    } catch (error) {}
+    } catch (error) {
+      return;
+    }
+    throw new UnprocessableEntityException('Email already exists.');
   }
 
   async getUser(getUserArgs: getUserArgs): Promise<User> {

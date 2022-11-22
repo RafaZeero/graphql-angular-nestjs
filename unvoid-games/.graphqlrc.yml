@@ -1,0 +1,6 @@
+# .graphqlrc.yml
+schema: http://localhost:3000/graphql
+documents: './src/**/*.graphql'
+extensions:
+  languageService:
+    cacheSchemaFileForLookup: true

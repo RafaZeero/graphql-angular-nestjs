@@ -7,7 +7,7 @@ import { LoginModule } from './auth/login/login.module';
 import { SignUpModule } from './auth/sign-up/sign-up.module';
 import { HeaderModule } from './header/header.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { APOLLO_OPTIONS } from 'apollo-angular';
+import { ApolloModule, APOLLO_OPTIONS } from 'apollo-angular';
 import { HttpLink } from 'apollo-angular/http';
 import { InMemoryCache } from '@apollo/client/core';
 import { HttpClientModule } from '@angular/common/http';
@@ -22,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderModule,
     LoginModule,
     SignUpModule,
+    ApolloModule,
   ],
   providers: [
     {
